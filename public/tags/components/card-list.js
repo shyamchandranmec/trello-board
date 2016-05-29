@@ -8,7 +8,7 @@ riot.tag2('card-list', '<div class="card card-small" data-uid="{id}"> <div class
         this.color = colors[app.randomIntFromInterval(0, 5)];
 
         this.addCard = function(data) {
-            data.position = this.cards.length + 1;
+            data.position = this.cards.length;
             data["card_group_id"] = this.id;
             var site = fermata.json("")(['cards']).post(data, function (err, resp) {
                 if (!err) {

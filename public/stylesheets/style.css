@@ -43,6 +43,11 @@ card-list {
 
 }
 
+.card-list-container {
+    min-width: 1500px;
+    position: relative;
+    top: 10px;
+}
 
 .master-container {
     overflow-x: scroll;
