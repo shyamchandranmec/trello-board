@@ -1,0 +1,56 @@
+
+home-page {
+    display: block;
+}
+
+card-list {
+    max-width: 300px;
+}
+
+.list-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+.action-card-container {
+    min-height: 300px;
+    padding: 10px;
+}
+
+.action-card {
+    padding: 10px;
+}
+
+.highlight {
+    background-color:#ef9a9a;
+}
+
+.date-field {
+    font-size: 10px;
+    position: relative;
+    bottom: 3px;
+}
+.card-list .card-title i {
+    position: relative;
+    top:6px;
+}
+
+.card-list .add-button {
+    cursor:pointer;
+    color: black;
+
+}
+
+
+.master-container {
+    overflow-x: scroll;
+    height:100vh;
+}
+
+
+action-card {
+    display: block;
+    margin-top: 10px;
+}

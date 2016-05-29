@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="/bower_components/fermata/fermata-0.10.8.js"></script>
+
+</head>
+<body class = "blue-grey lighten-5">
+<home-page></home-page>
+<script src="/javascripts/main.js"></script>
+<script src="/javascripts/init.js"></script>
+
+<script type="text/javascript" src="/bower_components/moment/moment.js"></script>
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/materialize/dist/js/materialize.js"></script>
+<script src="/bower_components/sortable/Sortable.min.js"></script>
+<script src="/bower_components/riot/riot.js"></script>
+
+
+<script src="/tags/components/trello-header.js"></script>
+<script src="/tags/components/add-card-modal.js"></script>
+<script src="/tags/components/footer-button.js"></script>
+<script src="/tags/components/add-list-modal.js"></script>
+<script src="/tags/components/action-card.js"></script>
+<script src="/tags/components/card-list.js"></script>
+<script src="/tags/pages/home-page.js"></script>
+<script>
+    var data = {
+        lists: <%- JSON.stringify(data) %>
+    }
+    riot.mount("home-page", {lists: data.lists});
+</script>
+
+</body>
+</html>
